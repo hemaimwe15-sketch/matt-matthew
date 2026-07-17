@@ -33,3 +33,43 @@
 
 </body>
 </html>
+body {
+    text-align: center;
+    font-family: Arial;
+    background-color: #111;
+    color: white;
+}
+
+h1 {
+    color: yellow;
+}
+
+.games {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.game {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px;
+    background: lime;
+    border: none;
+    cursor: pointer;
+}
+function playGame(game) {
+    if (game === "snake") {
+        window.open("https://playsnake.org/", "_blank");
+    }
+    else if (game === "tictactoe") {
+        window.open("https://papergames.io/en/tic-tac-toe", "_blank");
+    }
+    else if (game === "car") {
+        window.open("https://www.crazygames.com/game/madalin-stunt-cars-2", "_blank");
+    }
+}
